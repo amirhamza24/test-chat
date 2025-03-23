@@ -47,10 +47,10 @@ const SignUpPage = () => {
     <div className="min-h-screen grid lg:grid-cols-2">
       {/* left side */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
-        <div className="w-full max-w-md space-y-8">
+        <div className="w-full max-w-md mt-10">
           {/* logo */}
-          <div className="text-center mb-8">
-            <div className="flex flex-col items-center gap-2 group">
+          <div className="text-center">
+            <div className="flex flex-col items-center group">
               <div className="size-12 rounded-xl bg-[#262D42] flex items-center justify-center group-hover:bg-gray-700 transition-colors">
                 <MessageSquare className="size-6 text-primary" />
               </div>
@@ -65,7 +65,7 @@ const SignUpPage = () => {
           </div>
 
           {/* for name */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4 mt-4">
             <div className="form-control space-y-1">
               <label className="label">
                 <span className="label-text font-medium">Full Name</span>
@@ -159,7 +159,7 @@ const SignUpPage = () => {
             </button>
           </form>
 
-          <div className="text-center">
+          <div className="text-center mt-4">
             <div className="text-gray-500">
               Already have an account?{" "}
               <Link to="/login" className="link link-primary">
