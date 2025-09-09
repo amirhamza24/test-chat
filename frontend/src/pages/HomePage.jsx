@@ -8,10 +8,12 @@ import ChatContainer from "../components/ChatContainer";
 const HomePage = () => {
   const { selectedUser } = useChatStore();
 
+  console.log("selected user: ", selectedUser);
+
   return (
     <div className="h-screen bg-base-200">
-      <div className="flex items-center justify-center pt-16 px-4">
-        <div className="bg-base-100 rounded-lg shadow-cl w-full max-w-6xl h-[calc(100vh-8rem)}">
+      <div className="flex items-center justify-center pt-16">
+        <div className="bg-base-100 rounded-lg shadow-cl w-full max-w-6xl}">
           <div className="flex h-full rounded-lg overflow-hidden">
             <Sidebar />
 
