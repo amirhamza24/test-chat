@@ -8,7 +8,7 @@ import ChatContainer from "../components/ChatContainer";
 const HomePage = () => {
   const { selectedUser } = useChatStore();
 
-  console.log("selected user: ", selectedUser);
+  // console.log("selected user: ", selectedUser);
 
   return (
     <div className="h-screen bg-base-200">
